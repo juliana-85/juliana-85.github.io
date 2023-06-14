@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+   
+
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    #botas {
+        display: none;
+    }
+
+    #desplegable1 {
+        display: none;
+    }
+}
+
+.barraSuperior {
+    padding: 1em 2em;
+}
+
+.primeraFila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 3em 0;
+}
+
+.icono {
+    background-color: #059900;
+    border-radius: 5px;
+    margin: .7em .3em;
+    padding: .6em .7em;
+    height: 2.5em;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.whatsapp {
+    width: 13em;
+    margin-left: 1, 5em;
+}
+
+#celular {
+    color: #ffffff;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-left: .3em;
+}
+
+.nombre {
+    font-family: ui-serif;
+    color: #059900;
+    font-size: 4em;
+    position: absolute;
+    top: 0px;
+    left: 42%;
+}
+
+#reservas {
+    color: #110c0c;
+    font-family: "monserrat", sans-serif;
+    font-weight: 600;
+}
+
+#reservas:active,
+#reservas:visited,
+#reservas:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+}
+
+#desplegar {
+    margin: auto;
+    position: relative;
+    top: -1.5em;
+}
+
+#contraer {
+    margin: auto;
+    position: relative;
+    top: -1.5em;
+    display: none;
+}
+
+#contraer:hover,
+#desplegar:hover {
+    -webkit-box-shadow: 0px 0px 20px 7px #21b71ca1;
+    -moz-box-shadow: 0px 0px 20px 7px #21b71ca1;
+    box-shadow: 0px 0px 20px 7px #21b71ca1;
+    transition: .5s;
+}
+
+.opciones {
+    font-family: "monserrat", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 0 .2em;
+    transition: .2s;
+}
+
+.opciones:hover {
+    -webkit-box-shadow: 0px 0px 20px 7px #21b71c91;
+    -moz-box-shadow: 0px 0px 20px 7px #21b71c96;
+    box-shadow: 0px 0px 20px 7px r#21b71c8a;
+    color: black;
+    background-color: #21b71c99;
+    padding: 0 .2em;
+    border-radius: 15px;
+    transition: .2s;
+}
+
+#desplegable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    top: -6em;
+    opacity: 0;
+    transition: top 1s;
+    transition: all .5s;
+}
+
+.enlace line,
+.enlace:visited,
+.enlace:active {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+/************************************* VENTA*************************************/
+.cuerpoTienda {
+    width: 100%;
+    min-height: 100vh;
+    height: 80%;
+    position: relative;
+    top: -121.1px;
+    text-align: center;
+    text-shadow: #21b71ccc;
+    color: #fcf7f7;
+}
+
+.grupoTienda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.tienda {
+    width: 20em;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #059900, #070707a3);
+    box-shadow: 14px 14px 39px #000000db, -14px -14px 39px #042f02;
+}
+
+.tienda:hover {
+    box-shadow: 6px 2px 10px rgba(3, 1, 14, 0.515);
+}
+
+.foto {
+    width: 100%;
+    margin: 0 auto 1.3em auto;
+}
+
+.genero,
+.articulo {
+    width: 100%;
+    text-align: Center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.articulo {
+    font-size: 1, 3em;
+}
+
+.adicional {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    text-align: justify;
+}
+
+.precio {
+    width: 100%;
+    text-align: right;
+    margin: 1em 0 0 0;
+    font-size: 2em;
+}
+
+
+/************************************* PARA TELEFONO ************************************************/
+
+#botonCelular {
+    display: none;
+    width: 3em;
+    position: absolute;
+    left: 80vw;
+    top: 5.5em;
+}
+
+#lineaSuperior,
+#lineaInferior {
+    position: relative;
+    width: 3em;
+    height: .2em;
+    background-color: #059900;
+    margin: 1.5em 1em;
+    transition: .5em;
+}
+
+#lineaSuperior {
+    box-shadow: #059900 0 .8em;
+}
+
+#menuCelular {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    width: 16em;
+    margin: 3em;
+    padding: 1em;
+    top: -5.3em;
+    left: -19em;
+    transition: all .5s;
+    background-color: #000000a1;
+}
+
+/******** TERMINA *******/
+
+.cuerpo {
+    padding: -5em 0 0 0;
+    background-color: #042f02;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+}
+
+
+#desplegable1 {
+    width: 15em;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 29em;
+}
+
+#botas {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 80em;
+    max-width: 50em;
+    margin: 10em auto;
+}
+
+#bot1 {
+    width: 30em;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: .3s;
+}
+
+#bot2,
+#bot3 {
+    width: 13em;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: .3s;
+}
+
+#botas2 {
+    border-radius: 0 20px 0 0;
+}
+
+#botas3 {
+    border-radius: 0 0 20px 0;
+}
+
+.footer {
+    background-color: #000000;
+    margin-top: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerIzq {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.footerDer {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.textoFooter {
+    font-family: "monserrat", sans-serif;
+    font-weight: 600;
+    color: #059900;
+    margin: .3em 0;
+}
+
+/* ******************************* sLIDER ******************************************* */
+.container-slider {
+    width: 100%;
+    max-width: 600px;
+    top: -7.5em;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: #059900 solid 10px;
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    height: 500px;
+    margin-left: -100%;
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #21b71c8a;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    background-color: #059900;
+}
+
+.slider__btn-left {
+    left: 10px;
+}
+
+.slider__btn-rigth {
+    right: 10px;
+}
+
+
+/* *************************** RESPONSILIDAD ********************************* */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    #botonCelular {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .primeraFila {
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+
+    .nombre {
+        left: 61%;
+    }
+
+    .slogan {
+        font-size: 6.9em;
+    }
+
+    .cuerpoTienda {
+        font-size: 120%;
+    }
+
+    .container-slider {
+        width: 90vmin;
+    }
+
+
+}
+
+@media only screen and (max-width:590px) {
+    .nombre {
+        left: 30%;
+        top: 8%;
+        font-size: 3em;
+    }
+
+    #celular {
+        display: none;
+    }
+
+    .cuerpoTienda {
+        font-size: 60%;
+    }
+
+    .container-slider {
+        width: 80vmin;
+    }
+}
